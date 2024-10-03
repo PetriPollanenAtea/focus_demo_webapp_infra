@@ -19,6 +19,13 @@ resource "azurerm_linux_web_app" "webapp" {
       node_version = "20-lts"
     }
    }
+   auth_settings {
+     default_provider = "BuiltInAuthenticationProviderGithub"
+     github {
+       client_id = "Ov23liqRtcme7iYxE9MF"
+       client_secret = "5dd9780980fdc27a3d94dee7d17aac6710318cf2"
+     }
+   }
 }
 
 # Deploy code from a public GitHub repo
