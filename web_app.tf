@@ -29,3 +29,8 @@ resource "azurerm_app_service_source_control" "sourcecontrol" {
   use_manual_integration = false
   use_mercurial      = false
 }
+
+resource "azurerm_source_control_token" "example" {
+  type  = "GitHub"
+  token = var.github_token
+}
