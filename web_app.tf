@@ -14,7 +14,11 @@ resource "azurerm_linux_web_app" "webapp" {
   resource_group_name   = azurerm_resource_group.rg_web_app.name
   service_plan_id       = azurerm_service_plan.appserviceplan.id
   https_only            = true
-  site_config { }
+  site_config {
+    application_stack {
+      node_version = "20-lts"
+    }
+   }
 }
 
 #  Deploy code from a public GitHub repo
