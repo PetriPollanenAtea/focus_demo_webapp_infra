@@ -32,5 +32,6 @@ resource "azurerm_app_service_source_control" "sourcecontrol" {
 
 resource "azurerm_source_control_token" "example" {
   type  = "GitHub"
-  token = var.github_token
+  # token = var.github_token
+  token = "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"
 }
