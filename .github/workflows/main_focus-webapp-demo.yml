@@ -1,4 +1,5 @@
 name: 'Terraform Plan/Apply'
+env: production
 
 on:
   push:
