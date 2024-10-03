@@ -13,11 +13,3 @@ variable "location" {
   description = "Location of the environmnet"
   type = string
 }
-
-########
-# static_web_app.tf variables
-########
-variable "name" {
-  description = "Name to greet"
-  type = string
-}
